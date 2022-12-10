@@ -1,0 +1,199 @@
+/*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Bree Serif', serif;
+*/
+
+body{
+    background-image: url('../images/planks-dark-2.jpg');
+}
+.site{
+    font-family : 'Bree Serif', serif;
+}
+
+/* ----- LES EFFETS CSS ----- */
+.shadow {
+  color: #eee;
+  font-family: Arvo;
+  font-weight: bold;
+  text-shadow:
+    -3px -3px 0 #222,
+    3px -3px 0 #222,
+    -3px 3px 0 #222,
+    3px 3px 0 #222,
+    4px 4px 0 #eee,
+    5px 5px 0 #eee,
+    6px 6px 0 #eee,
+    7px 7px 0 #eee;
+  line-height: 0.8em;
+  letter-spacing: 0.1em;
+  transform: scaleY(0.7);
+  -webkit-transform: scaleY(0.7);
+  -moz-transform: scaleY(0.7);
+  margin:0;
+  text-align: center;
+}
+
+
+/* icons */
+.text-yellow-to-red{
+    /*text-shadow: -1px 3px 0 red, 1px 3px 0 red, -1px -3px 0 #000, 1px -3px 0 #000;*/
+    color: #eaca12;
+}
+
+/* text */
+.text-red-to-yellow{ 
+    /*text-shadow: -1px 3px 0 #f4d109, 1px 3px 0 #f4d109, -1px -3px 0 #000, 1px -3px 0 #000;*/
+    text-shadow: 2px 2px #eaca12; /* Yellow */
+    color: #e05a0d; /* red */
+}
+
+h1{
+    font-family: 'Alfa Slab One', cursive;
+    font-variant: small-caps;
+    padding:40px 0;
+    font-size:4.0em;
+    
+}
+
+/* ----- LE MENU NAV ----- */
+
+.nav-pills{
+    background: none !important;
+    height:60px;
+}
+
+.nav-link{
+    color:#eee;
+    border-radius:4px;
+    
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    font-size: 1.3em;
+    text-shadow : 2px 2px #222;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-align: center;
+    
+    padding:6px 20px;
+    margin:6px;
+    width:170px;
+
+}
+
+.nav-link:hover{
+    border:1px solid #e05a0d;
+    color:#e05a0d;
+    background: #eee;
+}
+
+.nav-link.active{
+    color:#eee !important;
+    background: #e05a0d !important;
+}
+
+
+
+/* ------- LES CARDS -------- */
+
+.card{
+    background:#eee;
+    min-height:510px;
+}
+
+.card-img-top{
+  background: #eaca12;
+}
+
+.card-title{
+    font-family: 'Alfa Slab One', cursive;
+    font-size:1.4em;
+    color:#e05a0d;
+}
+
+
+.card-text{
+    font-size:1.1em;
+    font-weight:200;
+    line-height: 1.2em;
+    margin-bottom:20px;
+}
+
+.btn-order{
+    text-decoration:none;
+    border-radius:4px;
+    background: #e05a0d;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 100;
+    color:#eee;
+    text-transform: uppercase;
+    letter-spacing: 2px;    
+    
+    padding:10px 30px;
+    width:100%;
+    
+}
+
+.btn-order:hover{
+    border:1px solid #e05a0d;
+    color:#e05a0d;
+    background: #eee;
+}
+
+/* -----  PRICE RIBBONS ------ */
+div.ribbon-box{
+position:absolute;
+top:0px;
+right:-3px;
+
+}
+
+p.ribbon {
+    position: relative;   /* pour servir de référent */
+    margin: 1em -10px;    /* pour décaler les bords */
+    background: #63a863;  /* pour visualiser */
+    border:1px solid #1f7f1f;
+    border-radius: 3px 0px 0px 3px;
+    width:130px;
+
+    font-family: 'Alfa Slab One', cursive;
+    font-size:1.0em;
+    font-weight: 100;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px rgba(0,0,0,0.9);
+    
+    
+    color:#eee;
+    padding:4px 14px;
+    
+    box-shadow: 0px 2px 2px #1c541c;
+    
+}
+
+p.ribbon::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+}
+
+p.right-bottom::after {
+  right: 0;
+  top: 100%;
+  margin-top:2px;
+  border-color: #123a12 transparent;
+  border-width: 10px 10px 0 0;
+}
+
+/* ADMIN */
+.admin{
+    background: #fff;
+    padding:50px;
+    border-radius: 10px;
+}
+
+/* FORMULAIRES */
+.help-inline{
+    color:#cc0000;
+    font-style: italic;
+    font-size:14px;
+}
+
